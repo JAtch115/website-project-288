@@ -73,14 +73,16 @@ body {
     border-radius: 0;
     border-width: 2px;
     padding: 7px 8px;
-  }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
     background-color: #aaaaaa;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
+}
+
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
-  }
+}
 
 /* Main Styles */
 main {
