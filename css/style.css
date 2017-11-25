@@ -261,3 +261,82 @@ section#content-block-tiles .tile {
   border-width: 0px;
   padding: 8px 14px;
 }
+
+
+
+
+
+/* Form Styles */
+form {
+    position: relative;
+    margin: 100% auto 100% auto;
+    max-width: 500px;
+    
+    margin-top: 50px;
+    background-color: #0da59b;
+    box-shadow: rgb(83, 83, 83) 5px 0px 15px,
+                rgb(83, 83, 83) -5px 0px 15px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;        
+}
+#contactinfo {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-size: 1.2em;
+    padding: 2% 10% 0% 10%;
+    text-align: center;
+}
+.formrow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 7px 0px;   
+}
+input, textarea {
+    width: 100%;
+    box-shadow: INSET rgb(172, 172, 172) 0px 1px 0px,
+                INSET rgb(172, 172, 172) 0px 1px 0px;
+}
+#contactinfo.label {
+    padding-right: 5px;
+}
+#button {
+    padding: 5px;
+    padding-left: 75%;
+}
+textarea {
+    height: 200px;
+    width: 100%;
+}
+/* Fade-In Effect */
+@keyframes fadein {
+    from { opacity: 0; margin-top: -150px;}
+    to   { opacity: 1; margin-top: 50px;}
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; margin-top: -150px;}
+    to   { opacity: 1; margin-top: 50px;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; margin-top: -150px;}
+    to   { opacity: 1; margin-top: 50px;}
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; margin-top: -150px;}
+    to   { opacity: 1; margin-top: 50px;}
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; margin-top: -150px;}
+    to   { opacity: 1; margin-top: 50px;}
+}
