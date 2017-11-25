@@ -36,6 +36,34 @@
 </header>
 
 <main>
+    <form id="cform" action="va_script.js" method="post">
+        <fieldset id="contactinfo">
+            <legend><h1>Contact Information</h1></legend>
+            <p>We are here to answer any questions you may have about Vector &#9734 Apparel.
+               Reach out to us and we will respond as soon as we can.</p>
+               <section>
+                    <div class="formrow">
+                        <label for="name">YOUR NAME (required)</label>
+                        <input name="name" id="name" type="text" placeholder="" autofocus required/>
+                    </div><!-- name formrow -->        
+                    <div class="formrow">
+                        <label for="email">YOUR EMAIL (required)</label>
+                        <input name="email" id="email" type="text" placeholder=""/>
+                    </div>  <!-- email formrow -->
+                    <div class="formrow">
+                        <label for="subject">SUBJECT</label>
+                        <input name="subject" id="subject" type="text" placeholder=""required/>
+                    </div><!-- subject formrow -->
+                    <div class="formrow">
+                        <label for="message">YOUR MESSAGE</label>
+                        <textarea name="message" placeholder=""></textarea>
+                    </div><!-- message formrow -->  
+                    <div id="button">
+                            <input value="Send" onclick="Submit" type="submit"/>
+                        </div><!-- button formrow -->                                        
+                </section>                                
+        </fieldset>                       
+    </form>
     
 </main>
 
@@ -46,7 +74,7 @@
             <p>Bacon ipsum dolor amet venison shankle id sed consectetur, biltong filet mignon.</p>
         </div>
         <div class="col col-xs-6 col-md-6">
-            <h5 class="title">CompanyName</h5>
+            <h5 class="title">Vector &#9734 Apparel</h5>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -57,7 +85,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        &copy; 2017 Copyright CompanyName
+        &copy; 2017 Copyright Vector &#9734 Apparel
     </div>
 </footer>
 
