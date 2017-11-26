@@ -189,7 +189,15 @@ section#content-block-tiles .tile {
 .page-footer .col {
     padding-left: 25px;
 }
-
+.page-footer aside > img {    
+    height: 40%;
+    width: 40%;
+}
+.page-footer aside {
+    font-size: .85em;
+    
+    
+}
 .page-footer p {
     color: #dddddd;
 }
@@ -271,8 +279,7 @@ form {
     position: relative;
     margin: 100% auto 100% auto;
     max-width: 500px;
-    
-    margin-top: 50px;
+    margin-top: -5px;
     background-color: #0da59b;
     box-shadow: rgb(83, 83, 83) 5px 0px 15px,
                 rgb(83, 83, 83) -5px 0px 15px;
@@ -308,7 +315,7 @@ input, textarea {
     padding-right: 5px;
 }
 #button {
-    padding: 5px;
+    margin: 10px 5px 10px 5px;
     padding-left: 75%;
 }
 textarea {
@@ -317,26 +324,26 @@ textarea {
 }
 /* Fade-In Effect */
 @keyframes fadein {
-    from { opacity: 0; margin-top: -150px;}
-    to   { opacity: 1; margin-top: 50px;}
+    from { opacity: 0; margin-top: -550px;}
+    to   { opacity: 1; margin-top: -5px;}
 }
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; margin-top: -150px;}
-    to   { opacity: 1; margin-top: 50px;}
+    from { opacity: 0; margin-top: -550px;}
+    to   { opacity: 1; margin-top: -5px;}
 }
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; margin-top: -150px;}
-    to   { opacity: 1; margin-top: 50px;}
+    from { opacity: 0; margin-top: -550px;}
+    to   { opacity: 1; margin-top: -5px;}
 }
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; margin-top: -150px;}
-    to   { opacity: 1; margin-top: 50px;}
+    from { opacity: 0; margin-top: -550px;}
+    to   { opacity: 1; margin-top: -5px;}
 }
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; margin-top: -150px;}
-    to   { opacity: 1; margin-top: 50px;}
+    from { opacity: 0; margin-top: -550px;}
+    to   { opacity: 1; margin-top: -5px;}
 }
