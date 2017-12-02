@@ -139,6 +139,10 @@ section#content-block-image img {
     width: 90%;
 }
 
+section#content-block-image p .btn {
+    margin-top: 6px;
+}
+
 @media (min-width: 768px) {
     section#content-block-image img  {
         padding: 25px;
@@ -165,7 +169,7 @@ section#content-block-tiles h4 {
 section#content-block-tiles .tile {
     background: #0da59b;
     float: none;
-    height: 150px;
+    height: 175px;
     margin: auto;
     margin-bottom: 15px;
     overflow: hidden;
@@ -317,8 +321,8 @@ footer .btn-default {
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
   color: #ffffff;
-  background-color: #00948a;
-  border-color: #00948a;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
   border-width: 0px;
   padding: 8px 14px;
 }
