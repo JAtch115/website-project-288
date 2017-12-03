@@ -177,7 +177,64 @@ section#content-block-tiles .tile {
     padding-right: 15px;
     padding-top: 5px;
 }
+#webstore {
+    background-image: url(img/retail.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+}
 
+/* Product Styles */
+.circle {
+    display: flex;
+    margin-bottom: 15px;
+    margin: auto;
+    overflow: hidden;
+    background: #0da59b;
+    border-radius: 50%;   
+    border: 16px solid #00c7b6;
+    height: 500px;
+    width: 500px;
+    align-items: center;;
+    -webkit-animation: createCircle 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: createCircle 1s; /* Firefox < 16 */
+    -ms-animation: createCircle 1s; /* Internet Explorer */
+    -o-animation: createCircle 1s; /* Opera < 12.1 */
+    animation: createCircle 1s;
+}
+#circle1 {
+}
+#circle5 {
+    animation-delay: .15s;
+}
+#circle3 {   
+    -webkit-animation-delay: .35s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .35s; /* Firefox < 16 */
+    -ms-animation-delay: .35s; /* Internet Explorer */
+    -o-animation-delay: .35s; /* Opera < 12.1 */
+    animation-delay: .35s;     
+
+}
+#circle4 {
+    -webkit-animation-delay: .55s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .55s; /* Firefox < 16 */
+    -ms-animation-delay: .55s; /* Internet Explorer */
+    -o-animation-delay: .55s; /* Opera < 12.1 */
+    animation-delay:  .55s;   
+}
+#circle6 {
+    -webkit-animation-delay: .75s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .75s; /* Firefox < 16 */
+    -ms-animation-delay: .75s; /* Internet Explorer */
+    -o-animation-delay: .75s; /* Opera < 12.1 */
+    animation-delay: .75s;   
+}
+#circle2 {
+    -webkit-animation-delay: .95s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .95s; /* Firefox < 16 */
+    -ms-animation-delay: .95s; /* Internet Explorer */
+    -o-animation-delay: .95s; /* Opera < 12.1 */
+    animation-delay: .95s;   
+}
 
 /* Footer Styles */
 .page-footer {
@@ -193,13 +250,32 @@ section#content-block-tiles .tile {
 .page-footer .col {
     padding-left: 25px;
 }
-.page-footer aside > img {    
-    height: 40%;
+
+.page-footer aside img {
     width: 40%;
+    height: 40%;
+    max-width: 100%;
+    max-height: 100%;
 }
-.page-footer aside {
-    margin-top: 6px;
-    font-size: .85em;
+
+.page-footer aside button {
+    border: 1px solid gray;
+    color: #3d3d3d;
+}
+
+#form-newsletter {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    max-width: 100%;
+    
+}
+
+#input-newsletter {
+    flex-grow: 2;
+    border: none;
+    color: #3d3d3d;
+    
 }
 .page-footer p {
     color: #dddddd;
@@ -231,6 +307,7 @@ section#content-block-tiles .tile {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
 .btn-info {
     background-color: #0da59b;
     border-color: #0da59b;
@@ -291,7 +368,7 @@ footer .btn-default {
 }
 
 .btn-default:focus,
-.btn-default.focus {
+.btn-default.focus, {
     color: #3d3d3d;
     background-color: #eeeeee;
     border-color: #eeeeee;
@@ -328,7 +405,7 @@ footer .btn-default {
 }
 
 /* Form Styles */
-form {
+#cform {
     position: relative;
     margin: 100% auto 100% auto;
     max-width: 500px;
@@ -352,6 +429,7 @@ form {
     padding: 2% 10% 0% 10%;
     text-align: center;
 }
+
 .formrow {
     display: -webkit-flex;
     display: flex;
@@ -359,23 +437,27 @@ form {
     flex-flow: row wrap;
     margin: 7px 0px;   
 }
+
 input, textarea {
     width: 100%;
     box-shadow: INSET rgb(172, 172, 172) 0px 1px 0px,
                 INSET rgb(172, 172, 172) 0px 1px 0px;
 }
+
 #contactinfo.label {
     padding-right: 5px;
 }
+
 #button {
-    margin: 10px 5px 10px 5px;
+    margin: 10px 1px 10px 1px;
     padding-left: 75%;
 }
+
 textarea {
     height: 200px;
     width: 100%;
 }
-/* Fade-In Effect */
+/* Drop-In Contact Effect */
 @keyframes fadein {
     from { opacity: 0; margin-top: -550px;}
     to   { opacity: 1; margin-top: -5px;}
@@ -400,3 +482,34 @@ textarea {
     from { opacity: 0; margin-top: -550px;}
     to   { opacity: 1; margin-top: -5px;}
 }
+
+/* Grow-In Product Effect */
+@keyframes createCircle {
+    0% {transform: scale(0);opacity: 0;}
+    66% {transform: scale(0.66);opacity: 0;}
+    100%   {transform: scale(1);opacity: 1;}
+}
+/* Firefox < 16 */
+@-moz-keyframes createCircle {
+    0% {transform: scale(0);opacity: 0;}
+    66% {transform: scale(0.66);opacity: 0;}
+    100%   {transform: scale(1);opacity: 1;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes createCircle {
+    0% {transform: scale(0);opacity: 0;}
+    66% {transform: scale(0.66);opacity: 0;}
+    100%   {transform: scale(1);opacity: 1;}
+}
+/* Internet Explorer */
+@-ms-keyframes createCircle {
+    0% {transform: scale(0);opacity: 0;}
+    66% {transform: scale(0.66);opacity: 0;}
+    100%   {transform: scale(1);opacity: 1;}
+}
+/* Opera < 12.1 */
+@-o-keyframes createCircle {
+    0% {transform: scale(0);opacity: 0;}
+    66% {transform: scale(0.66);opacity: 0;}
+    100%   {transform: scale(1);opacity: 1;}
+} 
