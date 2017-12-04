@@ -92,7 +92,7 @@ main {
 }
 
 section#hero-image {
-    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/main.jpeg"), #808080;
+    background:  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../img/main.jpeg"), #808080;
     background-size: 150%;
     color: #ffffff;
     padding-bottom: 4em;
