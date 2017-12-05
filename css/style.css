@@ -2,7 +2,7 @@
 
 /*
    Author:      James Atchison, Aris Fleming
-    Date:       12/04/2017
+    Date:       12/05/2017
     Instructor: John Kinuthia
     Course:     ISYS 288-AGA Fall 2017
 
@@ -120,46 +120,50 @@ section#hero-image p {
     }
 }
 
-
-section#content-block-image {
+section#content-block-image-1 {
     background: #0da59b;
     color: #ffffff;
 }
 
-section#content-block-image .col {
+section#content-block-image-1 {
+    background: #ffffff;
+    color: #000000;
+}
+
+section.content-block-image .col {
     margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-section#content-block-image h3 {
+section.content-block-image h3 {
     text-transform: uppercase;
 }
 
-section#content-block-image img {
+section.content-block-image img {
     margin: auto;
     padding-top: 25px;
     width: 90%;
 }
 
-section#content-block-image p .btn {
+section.content-block-image p .btn {
     margin-top: 10px;
 }
 
-section#content-block-image .text-content {
+section.content-block-image .text-content {
     text-align: center;
     padding-bottom: 15px;
     width: 90%;
 }
 
 @media (min-width: 768px) {
-    section#content-block-image {
+    section.content-block-image {
         padding-bottom: 20px;
     }
-    section#content-block-image .col {
+    section.content-block-image .col {
         padding: 25px;
     }
-    section#content-block-image .text-content {
+    section.content-block-image .text-content {
         float: left;
         padding-right: 25px;
         text-align: left;
