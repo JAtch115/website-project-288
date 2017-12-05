@@ -191,6 +191,7 @@ section#content-block-tiles .tile {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
+    z-index: 0;
 }
 #webstore {
     background-image: url(img/retail.png);
@@ -206,7 +207,7 @@ section#content-block-tiles .tile {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 250px;
-    z-index: -2;
+    background: white;
 }
 #blog #img1 {
     display: flex;
@@ -216,7 +217,7 @@ section#content-block-tiles .tile {
     display: flex;
     float: right;
     padding: 5px 5px 0px 5px;
-    width: 40%;
+    width: 40%;    
 }
 #blog figcaption {
     background: #0da59b;
@@ -230,17 +231,16 @@ section#content-block-tiles .tile {
 /* Product Styles */
 .circle {
     display: flex;
+    height: 500px;
+    width: 500px;
+    max-width: 100%;
     margin-bottom: 15px;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
     background: #0da59b;
     border-radius: 50%;   
     border: 16px solid #00c7b6;
-    height: 500px;
-    width: 500px;
-    max-width: 100%;
-    max-height: 100%;
-    align-items: center;
+    
     -webkit-animation: createCircle 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: createCircle 1s; /* Firefox < 16 */
     -ms-animation: createCircle 1s; /* Internet Explorer */
@@ -249,7 +249,7 @@ section#content-block-tiles .tile {
 }
 .circle:hover {
     box-shadow: rgb(83, 83, 83) 5px 0px 15px,
-    rgb(83, 83, 83) -5px 0px 15px;
+                rgb(83, 83, 83) -5px 0px 15px;
 }
 .circle img {
     z-index: 1;
@@ -292,8 +292,6 @@ section#content-block-tiles .tile {
     -o-animation-delay: .75s; /* Opera < 12.1 */
     animation-delay: .75s;   
 }
-
-
 #circle1 img {
     transform: rotate(-7deg);
 }
@@ -303,12 +301,10 @@ section#content-block-tiles .tile {
 #circle4 img {
     transform: rotate(7deg);
 }
-
 .circle h4 {
     position: absolute;
-    margin: auto;
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    max-width: 100%;
     z-index: 3;
     font-size: 45px;
 }
@@ -320,7 +316,7 @@ section#content-block-tiles .tile {
     height: 189px;
     position: fixed;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .page-footer .col {
@@ -330,33 +326,27 @@ section#content-block-tiles .tile {
 .page-footer aside img {
     width: 40%;
     height: 40%;
+
+}
+.page-footer aside {
+    display: inline-block;
+    width: 850px;    
     max-width: 100%;
-    max-height: 100%;
-    padding-top: .8px;
 }
-
-.page-footer #input-newsletter {
+.page-footer input {
+    flex-grow: 2;
+    border: none;
+    width: 330px;
+    max-width: 100%;
+    color: #3d3d3d;
     padding: 2px;
-}
-
+} 
 .page-footer .btn-default {
     clear: both;
     display: block;
     margin-top: 6px;
 }
 
-#form-newsletter {
-    width: 550px;
-    max-width: 100%;
-    
-}
-
-#input-newsletter {
-    flex-grow: 2;
-    border: none;
-    color: #3d3d3d;
-    
-}
 .page-footer p {
     color: #dddddd;
 }
@@ -484,7 +474,8 @@ section#content-block-tiles .tile {
 #cform {
     position: relative;
     margin: auto;
-    max-width: 500px;
+    width: 500px;
+    max-width: 100%;
     margin-top: -5px;
     margin-bottom: 20px;
     background-color: #0da59b;
