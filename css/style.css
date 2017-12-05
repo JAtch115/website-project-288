@@ -90,11 +90,7 @@ main {
     position: relative;
     z-index: 1;
 }
-#blog p {
-    margin: auto;
-    width: 25%;
-    padding-top: 10%;
-}
+
 section#hero-image {
     background:  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../img/main.jpeg"), #808080;
     background-size: 150%;
@@ -197,7 +193,36 @@ section#content-block-tiles .tile {
     background-repeat:no-repeat;
     background-position: center center;
 }
-
+/* Blog Styles */
+#blog {
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 250px;
+    z-index: -2;
+}
+#blog #img1 {
+    display: flex;
+    width: 100%;
+}
+#blog #img2 {
+    display: flex;
+    float: right;
+    padding: 5px 5px 0px 5px;
+    width: 40%;
+}
+#blog figcaption {
+    background: #0da59b;
+}
+#blog blockquote {
+    text-align: justify;
+}
+#blog #next {
+    float: right;
+}
 /* Product Styles */
 .circle {
     display: flex;
@@ -218,37 +243,12 @@ section#content-block-tiles .tile {
     -o-animation: createCircle 1s; /* Opera < 12.1 */
     animation: createCircle 1s;
 }
+.circle:hover {
+    box-shadow: rgb(83, 83, 83) 5px 0px 15px,
+    rgb(83, 83, 83) -5px 0px 15px;
+}
 .circle img {
     z-index: 1;
-}
-#circle1 {    
-    text-align: right;
-    z-index: 2;
-}
-#circle5 {
-    animation-delay: .15s;
-}
-
-#circle3 {   
-    -webkit-animation-delay: .35s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation-delay: .35s; /* Firefox < 16 */
-    -ms-animation-delay: .35s; /* Internet Explorer */
-    -o-animation-delay: .35s; /* Opera < 12.1 */
-    animation-delay: .35s;     
-}
-#circle4 {
-    -webkit-animation-delay: .55s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation-delay: .55s; /* Firefox < 16 */
-    -ms-animation-delay: .55s; /* Internet Explorer */
-    -o-animation-delay: .55s; /* Opera < 12.1 */
-    animation-delay:  .55s;   
-}
-#circle6 {
-    -webkit-animation-delay: .75s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation-delay: .75s; /* Firefox < 16 */
-    -ms-animation-delay: .75s; /* Internet Explorer */
-    -o-animation-delay: .75s; /* Opera < 12.1 */
-    animation-delay: .75s;   
 }
 #circle2 {
     -webkit-animation-delay: .95s; /* Safari, Chrome and Opera > 12.1 */
@@ -257,6 +257,38 @@ section#content-block-tiles .tile {
     -o-animation-delay: .95s; /* Opera < 12.1 */
     animation-delay: .95s;   
 }
+#circle3 {   
+    -webkit-animation-delay: .35s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .35s; /* Firefox < 16 */
+    -ms-animation-delay: .35s; /* Internet Explorer */
+    -o-animation-delay: .35s; /* Opera < 12.1 */
+    animation-delay: .35s;     
+}
+#circle3 img {
+    width: 98%;
+}
+#circle4 {
+    -webkit-animation-delay: .55s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .55s; /* Firefox < 16 */
+    -ms-animation-delay: .55s; /* Internet Explorer */
+    -o-animation-delay: .55s; /* Opera < 12.1 */
+    animation-delay:  .55s;   
+}
+#circle5 {
+    -webkit-animation-delay: .15s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .15s; /* Firefox < 16 */
+    -ms-animation-delay: .15s; /* Internet Explorer */
+    -o-animation-delay: .15s; /* Opera < 12.1 */
+    animation-delay: .15s;
+}
+#circle6 {
+    -webkit-animation-delay: .75s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation-delay: .75s; /* Firefox < 16 */
+    -ms-animation-delay: .75s; /* Internet Explorer */
+    -o-animation-delay: .75s; /* Opera < 12.1 */
+    animation-delay: .75s;   
+}
+
 
 #circle1 img {
     transform: rotate(-7deg);
@@ -450,6 +482,7 @@ section#content-block-tiles .tile {
     margin: auto;
     max-width: 500px;
     margin-top: -5px;
+    margin-bottom: 20px;
     background-color: #0da59b;
     box-shadow: rgb(83, 83, 83) 5px 0px 15px,
                 rgb(83, 83, 83) -5px 0px 15px;
@@ -495,7 +528,6 @@ input, textarea {
 
 textarea {
     height: 200px;
-    width: 100%;
 }
 /* Drop-In Contact Effect */
 @keyframes fadein {
