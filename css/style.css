@@ -447,7 +447,7 @@ section#content-block-tiles .tile {
 /* Form Styles */
 #cform {
     position: relative;
-    margin: 100% auto 100% auto;
+    margin: auto;
     max-width: 500px;
     margin-top: -5px;
     background-color: #0da59b;
