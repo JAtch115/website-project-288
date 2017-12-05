@@ -263,22 +263,17 @@ section#content-block-tiles .tile {
 }
 #circle3 img {
     transform: skewY(7deg);
-    z-index: -2;
 }
-#circle4 img,#circle4 h4 {
+#circle4 img {
     transform: rotate(7deg);
-    height: 95%;
-    width: 95%;
-    font-size: 40px;
-    position: relative;
 }
-#circle5 img {
-    display: block;
-}
-#content-block-tiles h4 {
-    z-index: 3;
+
+.circle h4 {
+    position: absolute;
+    margin: auto;
+    width: 50%;
     text-align: center;
-    float: right;
+    z-index: 3;
     font-size: 45px;
 }
 /* Footer Styles */
@@ -301,7 +296,7 @@ section#content-block-tiles .tile {
     height: 40%;
     max-width: 100%;
     max-height: 100%;
-    padding-top: .8vh;
+    padding-top: .8px;
 }
 
 .page-footer #input-newsletter {
