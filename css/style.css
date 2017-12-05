@@ -194,14 +194,19 @@ section#content-block-tiles .tile {
     border: 16px solid #00c7b6;
     height: 500px;
     width: 500px;
-    align-items: center;;
+    align-items: center;
     -webkit-animation: createCircle 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: createCircle 1s; /* Firefox < 16 */
     -ms-animation: createCircle 1s; /* Internet Explorer */
     -o-animation: createCircle 1s; /* Opera < 12.1 */
     animation: createCircle 1s;
 }
-#circle1 {
+.circle img {
+    z-index: 1;
+}
+#circle1 {    
+    text-align: right;
+    z-index: 2;
 }
 #circle5 {
     animation-delay: .15s;
@@ -212,7 +217,6 @@ section#content-block-tiles .tile {
     -ms-animation-delay: .35s; /* Internet Explorer */
     -o-animation-delay: .35s; /* Opera < 12.1 */
     animation-delay: .35s;     
-
 }
 #circle4 {
     -webkit-animation-delay: .55s; /* Safari, Chrome and Opera > 12.1 */
@@ -234,6 +238,16 @@ section#content-block-tiles .tile {
     -ms-animation-delay: .95s; /* Internet Explorer */
     -o-animation-delay: .95s; /* Opera < 12.1 */
     animation-delay: .95s;   
+}
+
+#circle1 img {
+    transform: rotate(-7deg);
+}
+#circle3 img {
+    transform: skewY(7deg);
+}
+#circle4 img {
+    transform: rotate(7deg);
 }
 
 /* Footer Styles */
