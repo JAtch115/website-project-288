@@ -211,6 +211,8 @@ section#content-block-tiles .tile {
     background: white;
 }
 #blog #img1 {
+    -webkit-filter: grayscale(25%);
+    filter: grayscale(25%);
     display: flex;
     width: 100%;
 }
