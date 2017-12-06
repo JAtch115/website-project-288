@@ -229,6 +229,11 @@ section#content-block-tiles .tile {
 #blog #next {
     float: right;
 }
+#content-block-image-2 img {
+    opacity: .9;
+    border-radius: 10px;
+}
+
 /* Product Styles */
 .circle {
     display: flex;
